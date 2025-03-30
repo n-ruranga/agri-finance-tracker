@@ -1,0 +1,49 @@
+# requirements.txt
+mysql-connector-python>=8.0.0
+python-dotenv>=0.19.0
+pytest>=6.0.0
+
+
+# DO NOT CHANGE: OVERALL PROJECT STRUCTURE
+
+agrifinance_tracker/
+│
+├── agrifinance/                  # Main package
+│   ├── __init__.py               # Package initialization
+│   ├── main.py                   # Main application entry point
+│   ├── models/                   # Data models
+│   │   ├── __init__.py
+│   │   ├── expense.py
+│   │   ├── income.py
+│   │   ├── loan.py
+│   │   └── report.py
+│   │
+│   ├── services/                 # Business logic
+│   │   ├── __init__.py
+│   │   ├── expense_service.py
+│   │   ├── income_service.py
+│   │   ├── loan_service.py
+│   │   ├── report_service.py
+│   │   └── data_service.py
+│   │
+│   ├── utils/                    # Utility functions
+│   │   ├── __init__.py
+│   │   ├── validators.py
+│   │   ├── helpers.py
+│   │   └── constants.py
+│   │
+│   └── database/                 # Database handling
+│       ├── __init__.py
+│       ├── db_handler.py
+│       └── migrations/           # For future database schema changes
+│
+├── tests/                        # Unit tests
+│   ├── __init__.py
+│   ├── test_expense.py
+│   ├── test_income.py
+│   ├── test_loan.py
+│   └── test_reports.py
+│
+├── requirements.txt              # Project dependencies
+├── README.md                     # Project documentation
+└── .gitignore                    # Files to ignore in version control
