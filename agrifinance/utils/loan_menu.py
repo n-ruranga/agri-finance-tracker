@@ -1,3 +1,4 @@
+
 # agrifinance/utils/loan_menu.py
 from datetime import datetime
 from agrifinance.services.loan_service import LoanService
