@@ -175,3 +175,4 @@ class LoanMenu:
                       f"{payment['interest']:<12.2f}{payment['balance']:<12.2f}")
         except ValueError:
             print("Invalid ID. Please enter a number.")
+
