@@ -1,9 +1,15 @@
 # agrifinance/main.py
 from agrifinance.utils.income_menu import IncomeMenu
+from agrifinance.utils.expense_menu import ExpenseMenu
+from agrifinance.utils.loan_menu import LoanMenu
+from agrifinance.utils.report_menu import ReportMenu
 
 class AgriFinanceTracker:
     def __init__(self):
         self.income_menu = IncomeMenu()
+        self.expense_menu = ExpenseMenu()
+        self.loan_menu = LoanMenu()
+        self.report_menu = ReportMenu()
 
     def run(self):
         print("Welcome to AgriFinance Tracker")
@@ -20,11 +26,11 @@ class AgriFinanceTracker:
             if choice == '1':
                 self.income_menu.display_menu()
             elif choice == '2':
-                print("Expense management coming soon!")
+                self.expense_menu.display_menu()
             elif choice == '3':
-                print("Loan management coming soon!")
+                self.loan_menu.display_menu()
             elif choice == '4':
-                print("Reports coming soon!")
+                self.report_menu.display_menu()
             elif choice == '5':
                 print("Thank you for using AgriFinance Tracker. Goodbye!")
                 break
