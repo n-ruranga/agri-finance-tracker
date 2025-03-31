@@ -1,0 +1,5 @@
+# requirements.txt
+mysql-connector-python>=8.0.0
+python-dotenv>=0.19.0
+pytest>=6.0.0
+
