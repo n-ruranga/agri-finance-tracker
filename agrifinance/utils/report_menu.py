@@ -92,3 +92,4 @@ class ReportMenu:
         print(f"- Net Profit: ${summary.net_profit:.2f}")
         print(f"- Active Loans: {summary.active_loans}")
         print(f"- Loan Payments Due: ${summary.loan_payments_due:.2f}")
+
