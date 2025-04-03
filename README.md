@@ -1,9 +1,7 @@
-Here's the updated README.md with detailed explanations of the application's working:
-
 ```markdown
 # AgriFinance Tracker
 
-![AgriFinance Logo](https://via.placeholder.com/150x50?text=AgriFinance+Tracker)  
+ 
 *A comprehensive command-line application for agricultural financial management*
 
 ## Features
@@ -64,17 +62,21 @@ The application follows a structured architecture:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/agrifinance-tracker.git
+git clone https://github.com/n-ruranga/agrifinance-tracker.git
 cd agrifinance-tracker
 ```
 
 ### 2. Set Up Virtual Environment
 ```bash
-python -m venv venv
+python -m venv venv 
 venv\Scripts\activate  # Windows
 source venv/bin/activate  # Linux/Mac
 ```
-
+(or python3 -m venv venv)
+On Debian/Ubuntu systems you need to install python3-venv
+```bash
+sudo apt install python3-venv
+```
 ### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
@@ -85,7 +87,10 @@ pip install -r requirements.txt
 2. Start **Apache** and **MySQL** services
 3. Create database:
    ```bash
-   mysql -u root -h localhost -e "CREATE DATABASE agrifinance_tracker;"
+   mysql -u root -p
+
+   Inside mysql run:
+   CREATE DATABASE agrifinance_tracker;
    ```
    (No password required by default in XAMPP)
 
