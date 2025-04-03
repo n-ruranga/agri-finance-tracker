@@ -24,3 +24,5 @@ class TimePeriodReport:
     income_by_category: List[CategorySummary]
     expenses_by_category: List[CategorySummary]
     financial_summary: FinancialSummary
+
+

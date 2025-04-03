@@ -1,4 +1,5 @@
 # agrifinance/services/loan_service.py
+
 from datetime import date
 from agrifinance.database.db_handler import DBHandler
 from agrifinance.models.loan import Loan, LoanStatus

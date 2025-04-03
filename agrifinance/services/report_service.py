@@ -113,3 +113,5 @@ class ReportService:
             end_date = date(year, month + 1, 1) - timedelta(days=1) if month < 12 else date(year, 12, 31)
             reports[start_date.strftime("%B")] = self.generate_time_period_report(start_date, end_date)
         return reports
+
+

@@ -1,4 +1,5 @@
 # agrifinance/models/loan.py
+
 from datetime import date
 from enum import Enum
 
